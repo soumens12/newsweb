@@ -1,0 +1,21 @@
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <h2 class="mb-4">Top Headlines</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 d-flex mb-4 news-block" *ngFor="let en of entertainmentDisplay">
+                <div class="bg-white shadow-sm p-4 flex-column">
+                    <p><img src="{{en.urlToImage}}" class="img-fluid" height="300" alt=""></p>
+                    <h4>{{en.title}}</h4>
+                    <p class="text-muted">{{en.author}}</p>
+                    <p>{{en.content}} </p>
+                    
+                    <a class="btn btn-dark" href="{{en.url}}" target="_blank">Read More</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+

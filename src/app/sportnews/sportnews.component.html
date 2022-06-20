@@ -1,0 +1,19 @@
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <h2 class="mb-4">Sports Headlines</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 d-flex mb-4 news-block" *ngFor="let sp of sportsDisplay">
+                <div class="bg-white shadow-sm p-4 flex-column">
+                    <p><img src="{{sp.urlToImage}}" class="img-fluid" height="300" alt=""></p>
+                    <h4>{{sp.title}}</h4>
+                    <p class="text-muted">{{sp.author}}</p>
+                    <p>{{sp.content}} </p>
+                    
+                    <a class="btn btn-dark" href="{{sp.url}}" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
